@@ -1,0 +1,42 @@
+/*
+Author: Simon Still
+Date: 9/25/2024
+
+*/
+
+/* CSS Reset */
+body, header, nav, footer, main, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*coloring*/
+body{
+    background-color: #7f02fc;
+    color: #fff
+}
+
+a:visited{
+    color: #fff;
+}
+
+hr{
+    border-color: #000;
+}
+
+/*Centering*/
+header, nav, footer{
+    text-align: center;
+}
+
+.skibidi{
+    text-align: center;
+    border-width: 300px;
+    border-color: white;
+}
+
+/*img*/
+img{
+    border-radius: 3%;
+}
