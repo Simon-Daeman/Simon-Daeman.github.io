@@ -1,7 +1,6 @@
 /*
 Author: Simon Still
 Date: 9/25/2024
-
 */
 
 /* CSS Reset */
@@ -11,32 +10,105 @@ body, header, nav, footer, main, h1, div, img, ul{
 	border: 0;
 }
 
-/*coloring*/
+/*coloring & styling*/
 body{
     background-color: #7f02fc;
-    color: #fff
+    color: #fff;
 }
 
 a:visited{
     color: #fff;
 }
 
+a:link{
+    color: #aaa;
+}
+
 hr{
-    border-color: #000;
+    border: 1px solid black
 }
 
-/*Centering*/
+nav{
+    background-color: #4903fc;
+    border-style: solid;
+    border-color: black;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    font-weight: bold;
+}
+
+
+/*centering & sizing*/
 header, nav, footer{
+    text-align: center !important;
+}
+
+header{
+    padding-top: 0%;
+}
+
+p{
     text-align: center;
 }
 
-.skibidi{
+main{
     text-align: center;
-    border-width: 300px;
-    border-color: white;
+}
+
+h1{
+    font-size: 50px;
+    font-family: fantasy, Georgia, Arial !important;
+}
+
+body{
+    font-family: "Barlow";
+}
+
+header, nav{
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #7f02fc;
+    color: #f1f1f1;
+}
+
+/*float*/
+.html{
+    float: left;
+    padding-left: 5%;
+    margin-top: 1%;
+    /*border: solid black 1px;*/
+}
+
+.it{
+    float: left;
+    padding-left: 5%;
+    margin-top: 1%;
+    /*border: solid black 1px;*/
+}
+
+footer{
+    clear: both;
+    padding-top: 5%;
 }
 
 /*img*/
-img{
+
+#skibidi{
+    text-align: center;
+}
+
+#skibidi img{
+    border: 3px solid black;
     border-radius: 3%;
+    margin: 10px 0;
+}
+
+
+/*
+#navbar{
+    position: fixed;
+    margin-left: 15px;
+    font-family: helvetica;
+    font-size: 15px;
 }
