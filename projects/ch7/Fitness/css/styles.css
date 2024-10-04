@@ -197,7 +197,7 @@ footer p a{
 	text-decoration: none;
 }
 
-/* Media Query for Talbet Viewport*/
+/* Media Query for Tablet Viewport*/
 @media screen and (min-width: 630px), print{
 
 	.mobile{
