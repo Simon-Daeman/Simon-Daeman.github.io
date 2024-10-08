@@ -184,6 +184,39 @@ article:nth-of-type(2){
 	height: 50%;
 }
 
+#form{
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%
+}
+
+#form h2{
+	text-align: center;
+}
+
+fieldset, input, select, textarea{
+	margin-bottom: 2%;
+}
+
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit{
+	margin: 0 auto;
+	display: block;
+	border: none;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+}
 /*Style rules for footer content*/
 footer p{
 	font-size: .75em;
@@ -307,6 +340,11 @@ footer p a{
 	tr:nth-child(odd){
 		background-color: #ccc;
 	}
+
+	form{
+		width: 70%;
+		margin: 0 auto;
+	}
 }
 /*End of Tablet Styles*/
 
@@ -376,6 +414,20 @@ footer p a{
 	#exercises{
 		clear: left;
 	}
+
+	form{
+		width: auto;
+	}
+
+	.form-grid{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.btn{
+		grid-column: 1 / span 3;
+	}
 } /*end of desktop styles*/
 
 /*media query for large desktop viewports*/
@@ -392,7 +444,6 @@ footer p a{
 } /*End of large viewports*/
 
 /*Media query for print*/
-
 @media print{
 
 	body{
