@@ -16,6 +16,10 @@ body{
     color: #fff;
 }
 
+.gradient{
+    background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
+}
+
 a:visited{
     color: #fff;
 }
@@ -64,7 +68,7 @@ h1{
 }
 
 body{
-    font-family: "Barlow";
+    font-family: "Barlow", Arial;
 }
 
 /*float*/
@@ -101,4 +105,17 @@ footer{
     border: 3px solid black;
     border-radius: 3%;
     margin: 10px 0;
+}
+
+.hobbies img{
+    padding-top: 8px;
+    padding-bottom: 3px;
+    border: black 3px;
+}
+
+/*Viewport for mobile devices*/
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 12em;
+    }
 }
