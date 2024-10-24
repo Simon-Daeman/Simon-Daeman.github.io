@@ -14,22 +14,15 @@ body, header, nav, footer, main, h1, div, img, ul{
 body{
     background-color: #7f02fc;
     color: #fff;
+    font-family: "Barlow", Georgia, Arial;
 }
 
 .gradient{
     background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
 }
 
-a:visited{
-    color: #fff;
-}
-
-a:link{
-    color: #aaa;
-}
-
 hr{
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 nav{
@@ -54,21 +47,14 @@ header{
     padding-top: 0%;
 }
 
-p{
-    text-align: center;
-}
-
-main{
+main, p{
     text-align: center;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 3em;
     font-family: fantasy, Georgia, Arial !important;
-}
-
-body{
-    font-family: "Barlow", Arial;
+    padding-bottom: .5%;
 }
 
 /*float*/
@@ -76,14 +62,12 @@ body{
     float: left;
     padding-left: 5%;
     margin-top: 1%;
-    /*border: solid black 1px;*/
 }
 
 .it{
     float: left;
     padding-left: 5%;
     margin-top: 1%;
-    /*border: solid black 1px;*/
 }
 
 footer{
@@ -96,7 +80,6 @@ footer{
 }
 
 /*img*/
-
 #skibidi{
     text-align: center;
 }
@@ -104,7 +87,7 @@ footer{
 #skibidi img{
     border: 3px solid black;
     border-radius: 3%;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .hobbies img{
@@ -113,9 +96,64 @@ footer{
     border: black 3px;
 }
 
-/*Viewport for mobile devices*/
-@media screen and (max-width: 1000px){
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Pseudo Classes*/
+#navbar a{
+    width: 5px;
+    height: 5px;
+}
+
+a:visited{
+    color: #fff;
+}
+
+a:link{
+    color: #ccc;
+}
+
+a:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+
+/*Animations*/
+
+/*Viewport for tablet devices*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     h1{
-        font-size: 12em;
+        font-size: 8em;
+    }
+
+    nav{
+        font-size: 1.75em;
+    }
+
+    .aboutme-h2{
+        font-size: 2em;
+        padding-top: 0;
+    }
+
+    .aboutme-h4{
+        font-size: 2.25em;
+    }
+
+    .aboutme-li{
+        text-align: left;
+        padding-left: 2%;
+        font-size: 1.75em;
+    }
+
+    .hobbies{
+        float: right;
+        padding-right: 5%;
+    }
+
+    #skibidi img{
+        width: 95%;
     }
 }
