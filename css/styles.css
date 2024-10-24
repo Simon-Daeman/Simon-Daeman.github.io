@@ -33,9 +33,8 @@ nav{
     font-weight: bold;
 }
 
-header, nav #navbar{
-    position: sticky;
-    top: 0;
+#navbar{
+    transition: transform .2s;
 }
 
 /*centering & sizing*/
@@ -57,16 +56,51 @@ h1{
     padding-bottom: .5%;
 }
 
+.aboutme-h3{
+    clear: left;
+    padding-top: 2%;
+}
+
+.html ul{
+    list-style-type: none;
+}
+
+.section-aboutme{
+    float: left;
+    padding-left: 5%;
+    list-style-type: none;
+}
+
+.chapter{
+    float: left;
+    padding-right: 5%;
+    font-size: 150%;
+}
+
+.chapter2{
+    float: left;
+    padding-right: 5%;
+    font-size: 150%;
+}
+
+.aboutme-li{
+    padding-top: 3px;
+    padding-bottom: 8px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
 /*float*/
 .html{
     float: left;
-    padding-left: 5%;
+    padding-left: 15%;
     margin-top: 1%;
 }
 
 .it{
     float: left;
     padding-left: 5%;
+    padding-right: 5%;
     margin-top: 1%;
 }
 
@@ -90,15 +124,14 @@ footer{
     margin: 10px;
 }
 
-.hobbies img{
-    padding-top: 8px;
-    padding-bottom: 3px;
-    border: black 3px;
+.hobbies{
+    border: 3px solid black;
+    border-radius: 5%;
 }
 
-.responsive{
-    max-width: 100%;
-    height: auto;
+.rubiks{
+    border: 2px solid black ;
+    border-radius: 5%;
 }
 
 /*Pseudo Classes*/
@@ -118,10 +151,30 @@ a:link{
 a:hover{
     border: 2px solid black;
     border-radius: 5px;
-    transform: scale(1.2);
+}
+
+.homies{
+    transition: transform .2s;
+    width: auto;
+    height: auto;
+}
+
+.homies:hover{
+    transform: scale(1.25);
 }
 
 /*Animations*/
+nav p{
+    transition: transform .2s;
+    width: auto;
+    height: auto;
+}
+
+nav p:hover{
+    transform: scale(1.2);
+}
+
+/*Map*/
 
 /*Viewport for tablet devices*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -156,4 +209,9 @@ a:hover{
     #skibidi img{
         width: 95%;
     }
+}
+
+/*Temporary Styles!*/
+video{
+    display: none;
 }
