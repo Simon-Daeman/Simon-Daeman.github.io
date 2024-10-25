@@ -12,17 +12,13 @@ body, header, nav, footer, main, h1, div, img, ul{
 
 /*coloring & styling*/
 body{
-    background-color: #7f02fc;
+    background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
     color: #fff;
     font-family: "Barlow", Georgia, Arial;
 }
 
-.gradient{
-    background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
-}
-
 hr{
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 nav{
@@ -44,6 +40,7 @@ header, nav, footer{
 
 header{
     padding-top: 0%;
+    background-color: #000;
 }
 
 main, p{
@@ -61,26 +58,12 @@ h1{
     padding-top: 2%;
 }
 
+.aboutme-h4{
+    padding-top: 5%;
+}
+
 .html ul{
     list-style-type: none;
-}
-
-.section-aboutme{
-    float: left;
-    padding-left: 5%;
-    list-style-type: none;
-}
-
-.chapter{
-    float: left;
-    padding-right: 5%;
-    font-size: 150%;
-}
-
-.chapter2{
-    float: left;
-    padding-right: 5%;
-    font-size: 150%;
 }
 
 .aboutme-li{
@@ -90,10 +73,14 @@ h1{
     font-weight: bold;
 }
 
+.band-header{
+    font-size: 2em;
+}
+
 /*float*/
 .html{
     float: left;
-    padding-left: 15%;
+    padding-left: 10%;
     margin-top: 1%;
 }
 
@@ -134,6 +121,41 @@ footer{
     border-radius: 5%;
 }
 
+.section-aboutme{
+    float: left;
+    padding-left: 1.25%;
+    list-style-type: none;
+    padding-top: 3%;
+}
+
+.html-header{
+    padding-right: 18%;
+}
+
+.chapter{
+    float: left;
+    padding-right: 5%;
+    font-size: 150%;
+}
+
+.chapter2{
+    float: left;
+    padding-left: 8.5%;
+    padding-right: 5%;
+    font-size: 150%;
+}
+
+.march{
+    float: left;
+    padding-left: 50px;
+    border-right: 5px solid black;
+    padding-right: 61px;
+}
+
+.concert{
+    float: right;
+}
+
 /*Pseudo Classes*/
 #navbar a{
     width: 5px;
@@ -149,7 +171,7 @@ a:link{
 }
 
 a:hover{
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 5px;
 }
 
@@ -177,7 +199,7 @@ nav p:hover{
 /*Map*/
 
 /*Viewport for tablet devices*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 601px) and (max-width: 1024px){
     h1{
         font-size: 8em;
     }
@@ -209,9 +231,42 @@ nav p:hover{
     #skibidi img{
         width: 95%;
     }
-}
 
-/*Temporary Styles!*/
-video{
-    display: none;
+    footer{
+        font-size: 1.75em;
+    }
+
+    .html{
+        text-align: center;
+        float: none;
+    }
+
+    .it{
+        font-size: 2em;
+        float: left;
+        padding-left: 36%;
+    }
+
+    .band{
+        font-size: 4em;
+    }
+
+    .march{
+        border: none;
+        text-align: center;
+    }
+
+    .march-img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .march p{
+        font-size: 2em;
+    }
+
+    .excerpt{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
 }
