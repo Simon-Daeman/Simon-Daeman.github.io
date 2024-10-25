@@ -8,8 +8,7 @@
 <head>
     <title>Electives</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" 
-          href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -19,6 +18,7 @@
     <header>
         <hr>
         <h1>Electives</h1>
+        <hr>
         <nav>
             <div id="navbar">
                 <p>
@@ -30,24 +30,32 @@
                 </p>
             </div>
         </nav>
+        <hr>
     </header>
 
     <main>
-        <h2>Band</h2>
-        <h4>Marching Season</h4>
-        <p>During marching season of band, I'm in the drumline and I play the bass drum</p>
-        <p>Excerpts:</p>
-        <object data="images/2024BeeHiveJive-BD.pdf" width="560" height="480" type="application/pdf">
-        <object data="images/EB-BD.pdf" width="560" height="480" type="application/pdf">
-        
+        <h2 class="band">Band</h2>
+        <div class="march">
+            <h4 class="band-header">Marching Season</h4>
+            <img src="images/marching.png" alt="marching band" width="50%" height="50%" class="march-img">
+            <p>During the marching season of band, I'm in the drumline and I play the bass drum.</p>
+            <p class="excerpt">Excerpts:</p>
+            <object data="images/2024BeeHiveJive-BD.pdf" width="560" height="480" type="application/pdf">
+            <object data="images/EB-BD.pdf" width="560" height="480" type="application/pdf">
+        </div>
 
-        <h4>Concert Season</h4>
+        <div class="concert">
+            <h4 class="band-header">Concert Season</h4>
+            <img src="images/concert.jpg" alt="concert band" width="50%" height="50%" class="concert-img">
+            <p>During the concert season of band, I'm in the percussion section and play a variety of percussion instruments.</p>
+            <p>Some of which include the xylophone, timpani, and snare drum.</p>
+        </div>
     </main>
-
-    
 
     <footer>
         <hr>
+        <p>Email: <a href="mailto:simon.still@stu.cvccworks.edu">simon.still@stu.cvccworks.edu</a></p>
+        <p>&#xA9; Copyright 2024</p>
     </footer>
 </body>
 </html>
