@@ -4,7 +4,7 @@ Date: 9/25/2024
 */
 
 /* CSS Reset */
-body, header, nav, footer, main, h1, div, img, ul{
+body, header, nav, footer, main, h1, h2, h3, h4, h5, h6, div, img, ul, hr, a, p{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -17,10 +17,12 @@ body{
     font-family: "Barlow", Georgia, Arial;
 }
 
+/*Styles horizontal rule*/
 hr{
     border: 1px solid white;
 }
 
+/*Styles for nav element*/
 nav{
     border-style: solid;
     border-color: black;
@@ -29,6 +31,7 @@ nav{
     font-weight: bold;
 }
 
+/*Established amount of time for navbar to expand when hovered over*/
 #navbar{
     transition: transform .2s;
 }
@@ -38,19 +41,36 @@ header, nav, footer{
     text-align: center !important;
 }
 
+/**/
 header{
     padding-top: 0%;
     background-color: #000;
 }
 
-main, p{
+main{
     text-align: center;
+}
+
+p{
+    text-align: center;
+    padding-top: none;
 }
 
 h1{
     font-size: 3em;
     font-family: fantasy, Georgia, Arial !important;
     padding-bottom: .5%;
+    padding-top: .5%;
+}
+
+h2{
+    padding-bottom: .5%;
+    padding-top: .5%;
+}
+
+.project-heading{ 
+    padding-top: .5%;
+    padding-bottom: 1%;
 }
 
 .aboutme-h3{
@@ -77,12 +97,6 @@ h1{
     font-size: 2em;
 }
 
-/*
-.excerpt{
-
-}
-*/
-
 .songs{
     font-size: 1.25em;
     font-weight: bold;
@@ -93,13 +107,6 @@ h1{
     float: left;
     padding-left: 10%;
     padding-right: 7.5%;
-    margin-top: 1%;
-}
-
-.it{
-    float: left;
-    padding-left: 7.5%;
-    padding-right: 10%;
     margin-top: 1%;
 }
 
@@ -149,23 +156,6 @@ footer{
     float: left;
     list-style-type: none;
     padding-top: 3%;
-}
-
-.html-header{
-    padding-right: 18%;
-}
-
-.chapter{
-    float: left;
-    padding-right: 5%;
-    font-size: 150%;
-}
-
-.chapter2{
-    float: left;
-    padding-left: 8.5%;
-    padding-right: 5%;
-    font-size: 150%;
 }
 
 .march{
@@ -226,7 +216,7 @@ nav p:hover{
 /*Viewport for tablet devices*/
 @media only screen and (min-width: 601px) and (max-width: 1024px){
     h1{
-        font-size: 8em;
+        font-size: 6em;
     }
 
     nav{
@@ -259,11 +249,6 @@ nav p:hover{
 
     footer{
         font-size: 1.75em;
-    }
-
-    .html{
-        text-align: center;
-        float: none;
     }
 
     .it{
