@@ -68,6 +68,11 @@ h2{
     padding-top: .5%;
 }
 
+.project{
+    border-width: 5px;
+    border-color: red;
+}
+
 .project-heading{ 
     padding-top: .5%;
     padding-bottom: 1%;
@@ -175,18 +180,19 @@ footer{
 #navbar a{
     width: 5px;
     height: 5px;
-}
-
-a:visited{
     color: #fff;
 }
 
+a:visited{
+    color: #000;
+}
+
 a:link{
-    color: #ccc;
+    color: #111;
 }
 
 a:hover{
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
