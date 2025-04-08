@@ -78,20 +78,15 @@ h2{
     padding-bottom: 1%;
 }
 
-.aboutme-h3{
-    clear: left;
-    padding-top: 2%;
-}
-
-.aboutme-h4{
-    padding-top: 5%;
+.aboutme-pad{
+    padding-top: 3%;
 }
 
 .html ul{
     list-style-type: none;
 }
 
-.aboutme-li{
+.aboutme-p{
     padding-top: 3px;
     padding-bottom: 8px;
     font-size: 1.25em;
@@ -146,23 +141,6 @@ footer{
     border-radius: 5%;
 }
 
-#likes{
-    padding-left: 14%;
-    padding-right: 14%;
-}
-.section-aboutme{
-    float: left;
-    padding-right: 2%;
-    list-style-type: none;
-    padding-top: 3%;
-}
-
-.section-aboutme2{
-    float: left;
-    list-style-type: none;
-    padding-top: 3%;
-}
-
 .march{
     float: left;
     padding-left: 10%;
@@ -215,79 +193,4 @@ nav p{
 
 nav p:hover{
     transform: scale(1.2);
-}
-
-/*Map*/
-
-/*Viewport for tablet devices*/
-@media only screen and (min-width: 601px) and (max-width: 1024px){
-    h1{
-        font-size: 6em;
-    }
-
-    nav{
-        font-size: 1.75em;
-    }
-
-    .aboutme-h2{
-        font-size: 2em;
-        padding-top: 0;
-    }
-
-    .aboutme-h4{
-        font-size: 2.25em;
-    }
-
-    .aboutme-li{
-        text-align: left;
-        padding-left: 2%;
-        font-size: 1.75em;
-    }
-
-    .hobbies{
-        float: right;
-        padding-right: 5%;
-    }
-
-    #skibidi img{
-        width: 95%;
-    }
-
-    footer{
-        font-size: 1.75em;
-    }
-
-    .it{
-        font-size: 2em;
-        float: left;
-        padding-left: 36%;
-    }
-
-    .band{
-        font-size: 4em;
-    }
-
-    .march{
-        border: none;
-        text-align: center;
-    }
-
-    .march-img{
-        width: 70%;
-        height: 70%;
-    }
-
-    .march p{
-        font-size: 2em;
-    }
-
-    .excerpt{
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-}
-
-/*Temporary Styles*/
-video{
-    display: none;
 }
