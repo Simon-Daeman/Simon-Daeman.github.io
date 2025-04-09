@@ -10,187 +10,185 @@ body, header, nav, footer, main, h1, h2, h3, h4, h5, h6, div, img, ul, hr, a, p{
 	border: 0;
 }
 
-/*coloring & styling*/
-body{
-    background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
-    color: #fff;
-    font-family: "Barlow", Georgia, Arial;
-}
+/*Styles for Home Page*/
+    #skibidi img{
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 3%;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+    }
 
-/*Styles horizontal rule*/
-hr{
-    border: 1px solid white;
-}
+    .homies{
+        transition: transform .2s;
+        width: auto;
+        height: auto;
+    }
 
-/*Styles for nav element*/
-nav{
-    border-style: solid;
-    border-color: black;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
-    font-weight: bold;
-}
+    .homies:hover{
+        transform: scale(1.25);
+    }
 
-/*Established amount of time for navbar to expand when hovered over*/
-#navbar{
-    transition: transform .2s;
-}
+/*Styles for About Me Page*/
+    .aboutme-lowpad{
+        padding-bottom: 3%;
+    }
 
-/*centering & sizing*/
-header, nav, footer{
-    text-align: center !important;
-}
+    .aboutme-highpad{
+        padding-top: 3%;
+    }
 
-/**/
-header{
-    padding-top: 0%;
-    background-color: #000;
-}
+    .aboutme-p{
+        padding-top: 3px;
+        padding-bottom: 8px;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
 
-main{
-    text-align: center;
-}
+/*Styles for Electives Page*/
+    .band{
+        font-size: 50px;
+        font-weight: bold;
+    }
 
-p{
-    text-align: center;
-    padding-top: none;
-}
+    .band-header{
+        font-size: 2em;
+    }
+    
+    .songs{
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    
+    .img-fluid{
+        width: 25%;
+        height: 25%;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-h1{
-    font-size: 3em;
-    font-family: fantasy, Georgia, Arial !important;
-    padding-bottom: .5%;
-    padding-top: .5%;
-}
+/*Styles for Projects Page*/
+    .project-heading{ 
+        padding-top: .5%;
+        padding-bottom: 1%;
+    }
 
-h2{
-    padding-bottom: .5%;
-    padding-top: .5%;
-}
+/*Styles for Tutorials Page*/
+    .tutorials-highpad{
+        padding-top: .5%;
+    }
+    
+    .rubiks{
+        border: 2px solid black ;
+        border-radius: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.project{
-    border-width: 5px;
-    border-color: red;
-}
+/*Classes and Ids Used for ALL Pages*/
+    #navbar{
+        transition: transform .2s;
+    }
+    
+    #navbar a{
+        width: 5px;
+        height: 5px;
+        color: #fff;
+    }
 
-.project-heading{ 
-    padding-top: .5%;
-    padding-bottom: 1%;
-}
+    
+    .html ul{
+        list-style-type: none;
+    }
 
-.aboutme-pad{
-    padding-top: 3%;
-}
+    .html{
+        float: left;
+        padding-left: 10%;
+        padding-right: 7.5%;
+        margin-top: 1%;
+    } 
+    
+    .hobbies{
+        border: 3px solid black;
+        border-radius: 5%;
+    }
 
-.html ul{
-    list-style-type: none;
-}
+/*Pseudo Class*/
+    a:visited{
+        color: #000;
+    }
 
-.aboutme-p{
-    padding-top: 3px;
-    padding-bottom: 8px;
-    font-size: 1.25em;
-    font-weight: bold;
-}
+    a:link{
+        color: #111;
+    }
 
-.band-header{
-    font-size: 2em;
-}
+    a:hover{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
 
-.songs{
-    font-size: 1.25em;
-    font-weight: bold;
-}
+/*Styling Used for ALL Classes*/
+    header{
+        text-align: center;
+        padding-top: 0%;
+        background-color: #000;
+    }
 
-/*float*/
-.html{
-    float: left;
-    padding-left: 10%;
-    padding-right: 7.5%;
-    margin-top: 1%;
-}
+    hr{
+        border: 1px solid white;
+    }
+    
+    nav{
+        border-style: solid;
+        border-color: black;
+        border-top-width: 3px;
+        border-bottom-width: 3px;
+        font-weight: bold;
+    }
+    
+    nav p{
+        transition: transform .2s;
+        width: auto;
+        height: auto;
+    }
 
-footer{
-    clear: both;
-    padding-top: 5%;
-}
+    nav p:hover{
+        transform: scale(1.2);
+    }
 
-#comingsoon{
-    text-align: center;
-}
-
-/*img*/
-#skibidi{
-    text-align: center;
-}
-
-#skibidi img{
-    border: 3px solid black;
-    border-radius: 3%;
-    margin: 10px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hobbies{
-    border: 3px solid black;
-    border-radius: 5%;
-}
-
-.rubiks{
-    border: 2px solid black ;
-    border-radius: 5%;
-}
-
-.march{
-    float: left;
-    padding-left: 10%;
-    padding-right: 4.5%;
-}
-
-.concert{
-    float: right;
-    padding-left: 2%;
-    padding-right: 4.5%;
-}
-
-
-/*Pseudo Classes*/
-#navbar a{
-    width: 5px;
-    height: 5px;
-    color: #fff;
-}
-
-a:visited{
-    color: #000;
-}
-
-a:link{
-    color: #111;
-}
-
-a:hover{
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-.homies{
-    transition: transform .2s;
-    width: auto;
-    height: auto;
-}
-
-.homies:hover{
-    transform: scale(1.25);
-}
-
-/*Animations*/
-nav p{
-    transition: transform .2s;
-    width: auto;
-    height: auto;
-}
-
-nav p:hover{
-    transform: scale(1.2);
-}
+    body{
+        background: linear-gradient(to top right, #7f02fc 60%, #d7c5eb);
+        color: #fff;
+        font-family: "Barlow", Georgia, Arial;
+    }
+    
+    main{
+        text-align: center;
+    }
+    
+    p{
+        text-align: center;
+        padding-top: none;
+    }
+    
+    h1{
+        font-size: 3em;
+        font-family: fantasy, Georgia, Arial !important;
+        padding-bottom: .5%;
+        padding-top: .5%;
+    }
+    
+    h2{
+        padding-bottom: .5%;
+        padding-top: .5%;
+    }
+    
+    footer{
+        clear: both;
+        padding-top: 5%;
+    }
+    
+    
